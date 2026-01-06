@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.birthdayreminder.MainController">
+    <top>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0" />
+            </padding>
+            <Label text="জন্মদিন রিমাইন্ডার" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+            <Region HBox.hgrow="ALWAYS" />
+            <TextField fx:id="searchField" promptText="নাম লিখুন" />
+            <ComboBox fx:id="monthBox" promptText="মাস" />
+            <Button text="অন্বেষণ" onAction="#onSearch" />
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="8">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0" />
+            </padding>
+            <Label text="নতুন / সম্পাদনা" style="-fx-font-weight:bold;" />
+            <Label text="নাম" />
+            <TextField fx:id="nameField" />
+            <Label text="জন্মতারিখ" />
+            <DatePicker fx:id="datePicker" />
+            <Label text="নোট" />
+            <TextField fx:id="noteField" />
+            <HBox spacing="8">
+                <Button text="যোগ করুন" onAction="#onAdd" />
+                <Button text="আপডেট" onAction="#onUpdate" />
+                <Button text="মুছুন" onAction="#onDelete" />
+                <Button text="নতুন" onAction="#onClear" />
+            </HBox>
+        </VBox>
+    </left>
+
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="colName" text="নাম" />
+                <TableColumn fx:id="colBirthDate" text="জন্মতারিখ" />
+                <TableColumn fx:id="colAge" text="বয়স" />
+                <TableColumn fx:id="colNote" text="নোট" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox>
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0" />
+            </padding>
+            <Label text="আজকের জন্মদিন:" style="-fx-font-weight:bold;" />
+            <Label fx:id="todayLabel" />
+        </HBox>
+    </bottom>
+</BorderPane>

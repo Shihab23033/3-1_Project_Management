@@ -1,0 +1,7 @@
+# MySQL connection example - copy to db.properties and update values
+db.host=localhost
+db.port=3306
+db.name=birthday_db
+db.user=root
+db.password=change_me
+# JDBC URL will be built as: jdbc:mysql://{host}:{port}/{name}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
