@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a792f51c-889a-4cb7-8a63-3790a0aed196" name="Changes" comment="" />
+    <list default="true" id="a792f51c-889a-4cb7-8a63-3790a0aed196" name="Changes" comment="up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,21 +10,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Shihab23033"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Shihab23033&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Shihab23033/3-1_Project_Management",
-    "accountId": "1c08a20d-23dd-4630-82a9-2c9ed5ec0ef2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Shihab23033/3-1_Project_Management&quot;,
+    &quot;accountId&quot;: &quot;1c08a20d-23dd-4630-82a9-2c9ed5ec0ef2&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="37NI8AHvpEq1Ul6RFAzzGO2i9VR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,6 +38,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Codes/javaFX/3-1_Project_Management",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -51,6 +52,19 @@
       <option name="presentableId" value="Default" />
       <updated>1766736939904</updated>
     </task>
+    <task id="LOCAL-00001" summary="up">
+      <option name="closed" value="true" />
+      <created>1768817499588</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768817499588</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
   </component>
 </project>
