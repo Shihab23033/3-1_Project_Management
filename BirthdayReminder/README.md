@@ -4,6 +4,35 @@
 
 ## সেটআপ (MySQL)
 
+run this on mysql command line:
+-- Create database (UTF8MB4 for Bengali)
+CREATE DATABASE IF NOT EXISTS `birthday_db`
+  DEFAULT CHARACTER SET = utf8mb4
+  DEFAULT COLLATE = utf8mb4_unicode_ci;
+USE `birthday_db`;
+
+-- Create table to store birthdays
+CREATE TABLE IF NOT EXISTS `birthdays` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(150) NOT NULL,
+  `birth_date` DATE NOT NULL,
+  `note` VARCHAR(255),
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Optional: add stored generated columns and index for fast month/day queries
+ALTER TABLE `birthdays`
+  ADD COLUMN `birth_month` TINYINT AS (MONTH(`birth_date`)) STORED,
+  ADD COLUMN `birth_day` TINYINT AS (DAY(`birth_date`)) STORED,
+  ADD INDEX `idx_month_day` (`birth_month`, `birth_day`);
+
+-- Sample data (Bangla names)
+INSERT INTO `birthdays` (`name`, `birth_date`, `note`) VALUES
+  ('রফিকুল ইসলাম', '1998-01-06', 'শ্রেণীর বন্ধু'),
+  ('সাবিনা রহমান', '2000-07-14', 'বাহিরে খেলা করে'),
+  ('মাহমুদুল হাসান', '1999-12-20', 'টেক লিডার');
+
 1. MySQL সার্ভার চালু করুন ও একটি ইউজার প্রস্তুত করুন (উদাহরণ: `root` এবং পাসওয়ার্ড)।
 2. ডাটাবেস তৈরি ও নমুনা ডাটা ইম্পোর্ট করুন:
 
